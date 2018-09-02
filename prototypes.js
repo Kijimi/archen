@@ -23,10 +23,34 @@ module.exports = () => {
 		return a.join("");
 	};
 
+		function makeEmbed (color, title, message = null, footer = null, user = null) {
+		const colors = {
+			red: "#F44336",
+			blue: "#3F51B5",
+			green: "#4CAF50",
+			yellow: "#FFEB3B",
+			orange: "#FF9800"
+		};
+		
+		if (!colors.hasOwnProperty(color)) return;	//	Do nothing if an invalid color is given
+	
+		let embed = new Discord.RichEmbed();
+	
+		embed.setColor(colors[color])
+			.setDescription(`**${title}**${message != null ? '\n' + message : ''}`);
+		if (user) embed.setAuthor(user.tag, user.displayAvatarURL);
+		if (footer) {
+			embed.setFooter(footer);
+		} else {
+			embed.setTimestamp();
+		}
+	
+		staffChannel.send({ embed });
+	};
 	String.prototype.toProperCase = function () {
 		return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 	};
-
+	
 	Array.prototype.allValuesSame = function () {
 		for(var i = 1; i < this.length; i++)
 		{
