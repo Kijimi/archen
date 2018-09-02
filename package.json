@@ -1,0 +1,25 @@
+{
+	"name": "djs_boilerplate",
+	"version": "1.0.0",
+	"description": "Discord.js boilerplate",
+	"main": "bot.js",
+	"scripts": {
+		"start": "node ./"
+	},
+	"author": "depthbomb",
+	"license": "UNLICENSED",
+	"dependencies": {
+		"async-limiter": "^1.0.0",
+		"axios": "^0.18.0",
+		"bufferutil": "^4.0.0",
+		"discord.js": "^11.4.2",
+		"erlpack": "github:hammerandchisel/erlpack",
+		"fs": "0.0.1-security",
+		"libsodium-wrappers": "^0.7.3",
+		"markov": "0.0.7",
+		"moment": "^2.22.2",
+		"ms": "^2.1.1",
+		"request": "^2.88.0",
+		"superagent": "^3.8.3"
+	}
+}
