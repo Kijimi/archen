@@ -1,11 +1,11 @@
 exports.config = {
-	token: "NDg0MTM4NDYwMzY2NzY2MDgx.DmeSqQ.0ynE-bElCS1aFPQVNl5lToKaNhw",
+	token: "",
 
 	//	Whether to log debug info
 	debug: false,
 
 	//	Bot owner tag
-	ownerName: "Snivy#3307",
+	ownerName: "kiji | キジ#3307",
 
 	//Bot owner ID
 	ownerId: "255060661946548224",
@@ -18,6 +18,7 @@ exports.config = {
 
 	//	The initial "game" the bot will be playing when started
 	initialGame: "h-hewwo? >v<",
-
+	
+	//	Staff channel ID
 	channelId: "484145176982323200"
 };
